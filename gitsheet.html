@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Eddie's Git Sheet</title>
+<meta  charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Edikan">
+<link rel="stylesheet" href="gitsheet.css">
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h3>Git Sheet</h3>
+<p id="author">by edikan</p>
+</div>
+<div class="content">
+<p><pre>Git is a version control system created by Linus Torvalds in 2005 and is managed by Junio Harmano.
+GitHub provides tools that use Git it is the largest host of source code in the world, and is owned by Microsoft since 2018.
+</pre></p>
+<table>
+<caption>Basic Git Commands</caption>
+<tr>
+<td class="tile1" class="m"><span>git</span> --version</td>
+<td class="tile2">displays git version if any is installed</td>
+</tr>
+
+<tr>
+<td class="tile1"><span>git</span> --global user.name "name"</td>
+<td class="tile2">Sets the default username</td>
+</tr>
+
+<tr>
+<td class="tile1"><span>git</span> --global user.email <span>"email"</span></td>
+<td class="tile2">sets the default email for the user</td>
+</tr>
+
+<tr>
+<td class="tile1"><span>git</span> init</td>
+<td class="tile2">creates yours git repository basically telling git to track your directory</td>
+</tr>
+
+<tr>
+<td class="tile1"><span>git</span> status</td>
+<td class="tile2">shows the status of all files in your repository</td>
+</tr>
+
+<tr>
+<td class="tile1"><span>git</span> add .</td>
+<td class="tile2">tells git to track all changes in your directory (adds it to your staging environment.)</td>
+</tr>
+
+<tr>
+<td class="tile1"><span>git</span> commit -m <span>"message"</span></td>
+<td class="tile2">commits your changes to git(saves your changes to git anmd lets you come back to it whenever)</td>
+</tr>
+
+<tr>
+<td class="tile1"><span>git</span> commit -a -m <span>"message"</span></td>
+<td class="tile2">automatically stages and commits all your files(excluding untracked files)</td>
+</tr>
+
+<tr>
+<td class="tile1"><span>git</span> log</td>
+<td class="tile2">displays git various version (history) of commits</td>
+</tr>
+
+<tr>
+<td class="tile1"><span>git</span> help --all</td>
+<td class="tile2">provides all git commands</td>
+</tr>
+
+<tr>
+<td class="tile1"><span>git</span> <span>command</span>help</td>
+<td class="tile2">provides alloptions to use with specifried commands</td>
+</tr>
+
+<tr>
+<td class="tile1"><span>git</span> branch</td>
+<td class="tile2">display all bracnhes made in our repository <span>*</span> indicates the current branch being worked on</td>
+</tr>
+
+<tr>
+<td class="tile1"><span>git</span> branch <span>branch-name</span></td>
+<td class="tile2">this creates a branch from the master branch, with the stated <span>branch-name</span></td>
+</tr>
+
+<tr>
+<td class="tile1"><span>git</span> checkout <span>branch-name</span></td>
+<td class="tile2">switches to the stated <span>branch-name</span></td>
+</tr>
+
+<tr>
+<td class="tile1"><span>git</span> checkout -b <span>branch-name</span></td>
+<td class="tile2">creates a branch with <span>branch-name</span> and switches to it</td>
+</tr>
+
+<tr>
+<td class="tile1"><span>git</span> merge <span>branch-name</span></td>
+<td class="tile2">merges the <span>branch-name</span> to the master branch</td>
+</tr>
+
+<tr>
+<td class="tile1"><span>git</span> merge --abort</td>
+<td class="tile2">used when an merge conflict occurs and the user no longer wants to end the merge operation and revert back to the repositories previous state</td>
+</tr>
+</table>
+</div>
+
+</div>
+</body>
+<html>
